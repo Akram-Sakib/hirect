@@ -1,0 +1,107 @@
+/* jobs-available-section
+  -------------------------- */
+  .job-available-section,
+  .startup-section {
+    padding-bottom: 80px;
+    background-color: #0a1014;
+  }
+  .jobs-available {
+    /* background-color: #f1f4f7; */
+    background-color: #0a1014;
+    padding: 35px 0;
+  }
+  h3.title-sm {
+    font-size: 26px;
+    margin-bottom: 40px;
+    /* color: #0e101a; */
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .available-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .available-list li:nth-child(6n) {
+    margin-right: 0 !important;
+  }
+  .available-list li {
+    width: 15%;
+    margin-bottom: 30px;
+    margin-right: 2%;
+  }
+  .available-list li span {
+    border-radius: 25px;
+    background-color: #fff;
+    display: flex;
+    padding: 5px 10px;
+    width: 100%;
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 174px;
+    height: 48px;
+  }
+  
+  /* job-available-section-both responsiveness with media query
+  ------------------------------------------------------------ */
+  /* job-available-section-both for tablet device */
+  @media only screen and (min-width: 601px) and (max-width: 991px) {
+    .job-available-section,
+    .startup-section {
+      padding-bottom: 65px;
+    }
+    h3.title-sm {
+      font-size: 22px;
+      margin-bottom: 35px;
+    }
+  
+    .available-list li:nth-child(4n) {
+      margin-right: 0 !important;
+    }
+    .available-list li:nth-child(6) {
+      margin-right: 2% !important;
+    }
+  
+    .available-list li {
+      width: 23.5% !important;
+    }
+    .available-list li span {
+      font-size: 15px;
+    }
+  }
+  
+  /* job-available-section-both for mobile device */
+  @media only screen and (max-width: 600px) {
+    .job-available-section,
+    .startup-section {
+      padding-bottom: 70px;
+    }
+    h3.title-sm {
+      font-size: 22px;
+      margin-bottom: 35px;
+    }
+  
+    .available-list li:nth-child(2n) {
+      margin-right: 0;
+    }
+  
+    .available-list li {
+      width: 49%;
+      margin-right: 2%;
+    }
+  
+    .available-list li span {
+      font-size: 15px;
+      line-height: 20px;
+      padding: 5px 6px;
+    }
+  }

@@ -1,0 +1,456 @@
+/* recruiter-banner-section
+----------------------------- */
+.recruiter-section {
+  margin-top: 81px !important;
+}
+.recruiter-banner {
+  padding: 111px 0 80px;
+  background-color: #0a1014;
+}
+.row {
+  flex-direction: row;
+}
+.recruiter-banner-details {
+  width: 100%;
+  max-width: 540px;
+  padding-top: 35px;
+}
+h3.title-md {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #121127;
+}
+.recruiter-banner-details p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  /* color: grey; */
+  color: #e0d6d6;
+}
+.recruiter-banner-img {
+  text-align: center;
+  width: 432px;
+  padding-top: 20px;
+}
+.Schedule-call {
+  background: #fff;
+  box-shadow: 6px 6px 30px rgb(109 141 173 / 15%);
+  border-radius: 12px;
+  padding: 20px 20px 30px;
+  max-width: 526px;
+  margin-left: auto;
+}
+.schedule-a-call {
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: left;
+}
+.schedule-a-call.contact-ue-form p.schedule-title {
+  color: #333;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0;
+}
+.schedule-a-call.contact-ue-form p.schedule-text {
+  color: grey;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.schedule-checkbox {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0e101a;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.el-checkbox:last-of-type {
+  margin-right: 0;
+}
+.schedule-a-call .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #0e101a;
+}
+.schedule-a-call.contact-ue-form
+  .el-checkbox__input.is-checked
+  + .el-checkbox__label {
+  color: grey;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+.schedule-a-call.contact-ue-form .submitButton {
+  border-radius: 2px;
+  background-color: #2ce2a2;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  height: unset;
+  padding: 12px 0;
+}
+.schedule-a-call .submitButton {
+  height: 40px;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+}
+.el-button {
+  display: inline-block;
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  transition: 0.1s;
+}
+.el-button--primary {
+  color: #fff;
+  background-color: #29e19e;
+  border-color: #29e19e;
+}
+.el-dialog__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+}
+.el-dialog {
+  position: relative;
+  margin: 0 auto 50px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  box-sizing: border-box;
+  width: 50%;
+}
+.el-dialog {
+  border-radius: 12px;
+}
+.el-dialog__header {
+  padding: 20px 20px 10px;
+}
+.el-dialog__title {
+  line-height: 24px;
+  font-size: 18px;
+  color: #303133;
+}
+.el-dialog__headerbtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: 0 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.el-dialog__headerbtn .el-dialog__close {
+  color: #909399;
+}
+
+/* Input */
+.common_input {
+  border-radius: 2px;
+  background-color: #f2f4f8;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  border-color: #f7f7f7 !important;
+  margin-bottom: 15px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  padding: 25px 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 3px;
+  width: 100%;
+}
+.number_input {
+  width: 85%;
+}
+::placeholder {
+  opacity: 0.5;
+}
+.dropdown {
+  width: 100%;
+  border-radius: 2px;
+  background-color: #f2f4f8;
+}
+.number_dropdown {
+  background: #bbbbbb6d;
+}
+.number-div span,
+.number-div i {
+  color: #0000009e;
+}
+.number_dropdown {
+  width: 15%;
+  height: 52px;
+}
+.dropdown-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  padding: 5px 0;
+  display: none;
+  margin-top: 20px;
+  background: #f5f7fa;
+  border: 1px solid #e4e7ed;
+  position: relative;
+  z-index: 100;
+}
+.dropdown-body.open {
+  display: block;
+}
+.dropdown-item {
+  padding: 10px;
+}
+.dropdown-item:hover {
+  cursor: pointer;
+}
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91a5be;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+ 
+.icon {
+  font-size: 13px;
+  color: #91a5be;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+.icon.open {
+  transform: rotate(-180deg);
+}
+/* The container */
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 16px;
+  width: 15px;
+  border-radius:2px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: #29e19e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+/* .check-container .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+.check-container .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 4.3px;
+  height: 8px;
+  border: 3px solid #fff;
+  border-width: 0px 1.5px 1.5px 0px;
+  transform: rotate(45deg);
+}
+
+
+/* recruiter-banner-section responsiveness with media query
+------------------------------------------------------------ */
+/* recruiter-banner-section for tablet device */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .recruiter-section {
+    margin-top: 49px !important;
+}
+  .recruiter-banner {
+    padding: 125px 0 80px;
+  }
+  .recruiter-banner-details h3.title-md {
+    font-size: 55px !important;
+    line-height: 58px;
+    width: auto;
+  }
+  .recruiter-banner-details p[data-v-1cf69c32] {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .recruiter-banner-details p {
+    width: auto;
+    height: auto; 
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .dropdown-header {
+    padding: 15px 7px;
+  }
+  .common_input {
+    padding: 25px 7px;
+  }
+  .number_dropdown { 
+    width: 20%;
+  }
+  .recruiter-banner-img {
+    width: auto;
+    border-radius: 15px;
+    padding-top: 10px;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-text {
+    font-size: 16px;
+  }
+  .check-container {
+    padding-left: 20px;
+    font-size: 13.5px;
+  }
+  .checkmark { 
+    top: 4px; 
+    height: 13px;
+    width: 14px;
+  }
+  .check-container .checkmark:after { 
+    top: 0px;
+    width: 6px;
+    height: 9px;
+  }
+}
+
+/* recruiter-banner-section for tablet device */
+@media only screen and (max-width: 600px) {
+  .recruiter-section {
+    margin-top: 41px !important;
+}
+  .recruiter-banner {
+    padding: 80px 0 80px;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-title {
+    font-size: 23px !important;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-text {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 25px !important;
+  }
+  .recruiter-banner-details h3.title-md {
+    font-size: 23px !important;
+    line-height: 24px !important;
+    text-align: center;
+  }
+  .recruiter-banner-details p {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .recruiter-banner-img {
+    width: auto;
+    border-radius: 15px;
+    padding-top: 10px;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .schedule-a-call.contact-ue-form p.schedule-text {
+    font-size: 16px;
+  }
+  .common_input {
+    padding: 25px 7px;
+    font-size: 14px;
+  }
+  .dropdown-header {
+    padding: 15px 7px;
+  }
+  .dropdown-item {
+    font-size: 14px;
+  }
+  .dropdown-header span,
+  .dropdown-header i {
+    font-size: 14px !important;
+  }
+  .number_dropdown { 
+    width: 20%;
+  }
+  .check-container {
+    font-size: 14px;
+  }
+}

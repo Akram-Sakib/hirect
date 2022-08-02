@@ -1,0 +1,205 @@
+/*about-details-section
+------------------------*/
+.about-section { 
+  padding: 190px 0 70px;
+}
+.about-details {
+  margin-bottom: 25px;
+}
+h3.title-md {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+h3.title-md {
+  color: #121127;
+}
+.about-content p {
+  color: grey;
+  width: 85%;
+}
+.about-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.section-notes {
+  padding-top: 85px;
+  padding-right: 25px;
+}
+.about-content .btn {
+  margin-top: 20px;
+}
+.find-candidate-btn {
+  width: 224px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.default-btn {
+  border-radius: 20px;
+  background-color: #2ce2a2;
+  border-color: #2ce2a2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 11px;
+  line-height: normal;
+  transition: all 0.3s;
+}
+
+.about-image {
+  padding-top: 70px;
+}
+
+/* get-hired-section
+--------------------- */
+.get-hired-section .row {
+  align-items: center;
+}
+ 
+.about-section p {
+  color: grey;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.text-black {
+  color: #000;
+}
+.get-hired-content .btn {
+  margin-bottom: 15px;
+}
+
+.button-sm {
+  width: 174px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.default-btn {
+  border-radius: 20px;
+  background-color: #2ce2a2;
+  border-color: #2ce2a2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 11px;
+  line-height: normal;
+  transition: all 0.3s;
+}
+.section-notes {
+  padding-top: 85px;
+  padding-right: 25px;
+}
+
+/* about-details-responsiveness with media query
+------------------------------------------------- */
+/* about-details-section for tablet device
+------------------------------------------- */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .about-section {
+    padding: 150px 0 50px !important;
+  }
+
+  h3.title-md {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .about-content p {
+    width: 97.5%;
+  }
+  .section-notes {
+    padding-top: 40px;
+    padding-right: 0;
+  }
+
+  .about-section p br {
+    display: none;
+  }
+  .about-content .btn {
+    margin-top: 15px;
+  }
+  .bordered-btn,
+  .default-btn {
+    font-size: 14px;
+    padding: 6px 9px;
+  }
+  .about-image {
+    padding-top: 70px;
+  }
+
+  .button-sm {
+    width: 160px;
+  }
+  .section-notes {
+    padding-top: 40px;
+    padding-right: 0;
+  }
+}
+
+/* about-details-section for mobile device
+------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .about-section {
+    padding: 110px 0 40px;
+  }
+  .about-details {
+    margin-bottom: 35px !important;
+  }
+  .about-details .row {
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    text-align: center;
+  }
+  h3.title-md {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+  .about-section p {
+    font-size: 16px !important;
+  }
+  .about-section p br {
+    display: none;
+  }
+  .about-content p {
+    width: 100%;
+  }
+  .section-notes {
+    padding-top: 40px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-content .btn {
+    margin-top: 10px;
+  }
+  .find-candidate-btn {
+    margin: auto;
+  }
+  .default-btn {
+    font-size: 15px;
+    padding: 6px 9px;
+  }
+  .about-image {
+    padding: 0 0 40px;
+  }
+  .get-hired-img {
+    margin-bottom: 30px;
+  }
+  .get-hired-content {
+    text-align: center;
+  }
+  .get-hired-content .btn {
+    margin: auto;
+  }
+}

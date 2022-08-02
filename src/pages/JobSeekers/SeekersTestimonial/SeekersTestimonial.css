@@ -1,0 +1,200 @@
+/* seeker-testimonial
+------------------------- */
+.seeker-testimonial {
+  padding: 60px 0 80px;
+  background: #f9fbff;
+  background-color: #0a1014;
+}
+.seeker-testimonial h3 {
+  font-size: 40px;
+  color: #0e101a; 
+  color: #fff; 
+  font-weight: 700;
+  line-height: normal;
+  text-align: left; 
+  margin-bottom: 70px;
+}
+
+.seeker-testimonial .testimonial-card1 {
+  padding: 25px;
+  height: 430px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 95% !important;
+}
+.seeker-testimonial .testimonial-card1 .seeker-img {
+  margin-bottom: 20px;
+}
+.seeker-testimonial .testimonial-card1 .seeker-img img {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+}
+.seeker-testimonial .slick-slide img {
+  display: block;
+}
+.seeker-testimonial img {
+  max-width: 100%;
+}
+.seeker-testimonial .testimonial-card1 h4 {
+  color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.seeker-testimonial .testimonial-card1 p {
+  color: grey;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* seeker-testimonial-section responsiveness with media query
+-------------------------------------------------------- */
+/* seeker-testimonial-section for tablet device */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .seeker-testimonial  {
+    padding: 35px 0 80px; 
+}
+  .seeker-testimonial h3 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .testimonial-carousel {
+    padding: 30px 0;
+  }
+  .seeker-testimonial .slick-initialized .slick-slide {
+    display: block !important;
+  }
+  .seeker-column .slick-slide {
+    width: 360px !important;
+  }
+  .testimonial-card1 {
+    height: 410px;
+  }
+  .testimonial-card1 {
+    padding: 25px !important;
+  }
+  .testimonial-card1 .seeker-img {
+    margin-bottom: 15px;
+  }
+  .testimonial-card1 h4 {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .testimonial-card1 p {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+/* seeker-testimonial-section for mobile device */
+@media only screen and (min-width:390px) and (max-width: 600px) {
+  .seeker-testimonial {
+    padding: 27px 0 70px;
+  }
+  .seeker-testimonial h3 {
+    font-size: 30px;
+    margin-bottom: 45px;
+    padding-left: 10px;
+  }
+
+  .testimonial-carousel {
+    padding: 25px 0 0;
+  }
+  .seeker-column .slick-slide {
+    width: 393px !important;
+    margin-left: 10px;
+  }
+  .testimonial-card1 {
+    width: 100% !important;
+  }
+
+  .testimonial-card1 {
+    margin: 0;
+    height: auto !important;
+    padding: 25px 15px;
+  }
+  .testimonial-card1 .seeker-img {
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+  .testimonial-card1 .seeker-img img {
+    width: 90px !important;
+    height: 90px !important;
+    margin: auto !important;
+  }
+  .testimonial-card1 h4 {
+    font-size: 16px;
+    margin-bottom: 13px;
+    line-height: 20px;
+    text-align: center !important;
+  }
+  .testimonial-card1 p {
+    font-size: 16px;
+    text-align: center !important;
+    line-height: 21px;
+  }
+  .seeker-testimonial .slick-dots {
+    bottom: -28px !important;
+  }
+}
+
+
+@media only screen and  (max-width: 389px) {
+  .seeker-testimonial {
+    padding: 27px 0 70px;
+  }
+  .seeker-testimonial h3 {
+    font-size: 30px;
+    margin-bottom: 45px;
+    padding-left: 10px;
+  }
+
+  .testimonial-carousel {
+    padding: 25px 0 0;
+  }
+  .seeker-column .slick-slide {
+    width: 393px !important;
+    margin-left: 10px;
+  }
+  .seeker-testimonial .testimonial-card1 {
+    width: 90% !important;
+  }
+
+  .testimonial-card1 {
+    margin: 0;
+    height: auto !important;
+    padding: 25px 15px;
+  }
+  .testimonial-card1 .seeker-img {
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+  .testimonial-card1 .seeker-img img {
+    width: 90px !important;
+    height: 90px !important;
+    margin: auto !important;
+  }
+  .testimonial-card1 h4 {
+    font-size: 16px;
+    margin-bottom: 13px;
+    line-height: 20px;
+    text-align: center !important;
+  }
+  .testimonial-card1 p {
+    font-size: 16px;
+    text-align: center !important;
+    line-height: 21px;
+  }
+  .seeker-testimonial .slick-dots {
+    bottom: -28px !important;
+  }
+}
+/*------seekers-testimonial-section for mobile device-end-----*/

@@ -1,0 +1,119 @@
+/* scan-app-section
+----------------------- */
+.scan-app {
+    /* background-color: hsl(168, 63%, 97%); */
+    background-color: #0a1014;
+    padding: 50px 0 0;
+  }
+  .scan-app .row {
+    align-items: center;
+  }
+  .acan-code h2 {
+    /* color: #0e101a; */
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .acan-code p {
+    /* color: #0e101a; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .app-scan-button {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: end;
+    margin: 40px 0 0;
+  }
+  .app-scan-button li {
+    margin-right: 35px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .app-scan-img {
+    text-align: center;
+  }
+  .app-scan-img .downloads-stamp {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #2ce2a2;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 70%;
+    top: 65px;
+  }
+  .download-count {
+    display: block;
+    font-size: 20pt;
+    font-weight: 700;
+    padding-top: 20%;
+  }
+  .download-text {
+    position: relative;
+    font-size: 10.5pt;
+    bottom: 10px;
+  }
+  
+  /* app-scan-section responsiveness with media query
+  ----------------------------------------------------*/
+  /* app-scan-section for tablet device */
+  @media only screen and (min-width: 601px) and (max-width: 991px) {
+    .acan-code h2 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+    .acan-code p {
+      font-size: 13px;
+    }
+    .app-scan-button {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: end;
+      margin: 40px 0 0;
+    }
+    .app-scan-button {
+      margin-top: 35px;
+    }
+    .app-scan-button li {
+      margin-right: 16px;
+    }
+    .app-scan-button li:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* app-scan-section for mobile device */
+  @media only screen and (max-width: 600px) {
+    .acan-code {
+      text-align: center;
+    }
+    .acan-code h2 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+    .acan-code p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .app-scan-button {
+      margin-bottom: 40px;
+      margin-top: 35px;
+    }
+    .app-scan-button li {
+      margin-right: 10px;
+    }
+    .app-scan-button li:last-child {
+      margin-right: 0;
+    }
+  }

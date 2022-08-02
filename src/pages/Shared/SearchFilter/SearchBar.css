@@ -1,0 +1,32 @@
+.dataList {
+    list-style: none;
+    background: #282b2c;
+    position: absolute;
+    padding: 0;
+    border-radius: 4px;
+    z-index: 10;
+    margin-top: 3px;
+    border: 1px solid #ddd;;
+}
+
+.dataList li {
+    cursor: pointer;
+    padding: 10px 14px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.5;
+    color: #fff;
+}
+
+.dataList li:first-child{
+    border-radius: 4px 4px 0px 0px;
+}
+.dataList li:last-child{
+    border-radius: 0px 0px 4px 4px;
+}
+.dataList li:hover{
+    background-color: #181A1B;
+}
+
+.dataList li:last-child{
+    border-bottom: 0;
+}

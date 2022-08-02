@@ -1,0 +1,188 @@
+/* banner-section
+---------------------- */
+ 
+.direct-banner {
+    padding: 198px 0 80px;
+    background-color: #0a1014;
+  }
+  .direct-banner .row {
+    align-items: flex-end;
+  }
+  /* .direct-banner h1,
+  .direct-text h2,
+  .hire-now h2 {
+    font-size: 32px;
+  } */
+  .direct-banner h1 {
+    /* color: #0e101a; */
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .direct-Candidates.first {
+    padding-right: 70px;
+  }
+  
+  .direct-Candidates {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .direct-text {
+    padding-bottom: 10px;
+    margin-right: 8px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .direct-text h2 {
+    /* color: #0e101a; */
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 23px;
+  }
+  .direct-img img {
+    max-width: 100%;
+  } 
+  .button-sm {
+    width: 174px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .default-btn {
+    border-radius: 20px;
+    background-color: #2ce2a2;
+    border-color: #2ce2a2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 11px;
+    line-height: normal;
+    transition: all 0.3s;
+  }
+  
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer; 
+  }
+
+  .direct-Candidates.two {
+    padding-left: 56px;
+  }
+  .direct-text .startup-btn {
+    width: 240px;
+    height: 40px;
+  }
+  .direct-text .startup-btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* banner-section responsiveness with media query
+  ------------------------------------------------------------ */
+  /* banner-section for tablet device */
+  @media only screen and (min-width: 601px) and (max-width: 991px) {
+    .direct-banner {
+      padding: 170px 0 70px;
+    }
+    .direct-banner h1,
+    .direct-text h2 
+    {
+      font-size: 26px;
+    }
+    .direct-Candidates.first {
+      padding-right: 15px;
+    }
+    .direct-text {
+      height: 160px;
+    }
+    .direct-text h2 {
+      margin-bottom: 15px;
+    }
+     
+    .bordered-btn,
+    .default-btn {
+      font-size: 14px;
+      padding: 6px 9px;
+    }
+    .button-sm {
+      width: 160px;
+    }
+    .direct-Candidates.two {
+      padding-left: 0;
+    }
+    .direct-text .startup-btn,
+    .direct-text button.btn.default-btn.button-sm {
+      width: 150px;
+      height: 45px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  
+  /* banner-section for mobile device */
+  @media only screen and (max-width: 600px) {
+    .direct-banner {
+      padding: 130px 0 70px;
+    }
+    .direct-banner h1 {
+      font-size: 23px !important;
+    }
+    .direct-banner h1 br {
+      display: none;
+    }
+    .direct-Candidates.first {
+      padding-right: 0;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .direct-text {
+      margin-top: 30px;
+      display: block;
+      height: auto;
+      text-align: center;
+    }
+    .direct-text h2 {
+      font-size: 23px !important;
+      margin-bottom: 20px !important;
+    }
+    .button-sm {
+      width: 170px;
+      height: 40px;
+    }
+    .default-btn {
+      font-size: 15px;
+      padding: 6px 9px;
+    }
+    .direct-Candidates.two {
+      flex-direction: column-reverse;
+      margin-top: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    .direct-Candidates.two {
+      padding-left: 0;
+    }
+    .direct-text .startup-btn {
+      width: auto;
+    }
+  }
+  

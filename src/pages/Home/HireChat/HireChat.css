@@ -1,0 +1,121 @@
+/* hire-chat-section
+---------------------- */
+.hire-chat-section {
+    padding-bottom: 30px;
+    background: #0a1014;
+  }
+  .hire-chat {
+    padding-bottom: 60px;
+  }
+  .hire-chat .row {
+    align-items: center;
+  } 
+  .hire-now h2 {
+    font-size: 32px;
+  }
+  .hire-now h2 {
+    /* color: #0e101a;  */
+    color: #fff; 
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 35px;
+  }
+  .button-sm {
+    width: 174px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .default-btn {
+    border-radius: 20px;
+    background-color: #2ce2a2;
+    border-color: #2ce2a2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 11px;
+    line-height: normal;
+    transition: all 0.3s;
+  }
+  
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer; 
+  }
+  
+  .hire-now-img {
+    text-align: center;
+  }
+  
+  .hire-now p {
+    color: rgb(221, 208, 208);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 45px;
+  }
+  
+  /* hire-chat-section responsiveness with media query
+  ------------------------------------------------------------ */
+  /* job-available-section-both for tablet device */
+  @media only screen and (min-width: 601px) and (max-width: 991px) {
+    .hire-chat {
+      padding-bottom: 60px;
+    } 
+    .hire-now h2 {
+      font-size: 26px;
+    }
+    .bordered-btn,
+    .default-btn {
+      font-size: 14px;
+      padding: 6px 9px;
+    }
+    .button-sm {
+      width: 160px;
+    }
+    .hire-now p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  /* hire-chat-section for mobile device */
+  @media only screen and (max-width: 600px) {
+    .hire-chat-section {
+      padding-bottom: 20px;
+    }
+    .hire-chat {
+      padding-bottom: 60px;
+    }
+    .hire-chat-section .hire-chat:first-child .row {
+      flex-direction: column-reverse;
+    }
+    .hire-now {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .hire-now h2 {
+      font-size: 23px;
+      margin-bottom: 25px;
+    }
+    .hire-now h2 br {
+      display: none;
+    }
+    .button-sm {
+      width: 170px;
+      height: 40px;
+    }
+    .default-btn {
+      font-size: 15px;
+      padding: 6px 9px;
+    }
+    .hire-now p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+  }

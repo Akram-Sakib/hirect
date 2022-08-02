@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  padding: 0 !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+html,
+input,
+select,
+textarea {
+  font-family: Helvetica !important;
+}
+
+
+ 

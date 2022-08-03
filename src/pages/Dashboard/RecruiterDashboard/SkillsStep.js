@@ -1,23 +1,51 @@
-import React from "react";
+import  { useState } from "react";
 import SearchBar from "../../Shared/SearchFilter/SearchBar";
 import "./SkillsStep.css";
 
 const data = [
-  "Web Development",
-  "Artificial Intelligence",
-  "Natural Language Processing",
-  "Machine Learning",
-  "Data Science",
-  "Data Structure and Algorithm",
-  "Front End Development",
-  "Back End Development",
-  "Web Design",
-  "Software Engineer",
-  "Mern Stack",
-  "Mean Stack",
-]
+  { id: 1, name: "Web Development" },
+  { id: 2, name: "Artificial Intelligence" },
+  { id: 3, name: "Natural Language Processing" },
+  { id: 4, name: "Machine Learning" },
+  { id: 5, name: "Data Science" },
+  { id: 6, name: "Data Structure and Algorithm" },
+  { id: 7, name: "Front End Development" },
+  { id: 8, name: "Back End Development" },
+  { id: 9, name: "Web Design" },
+  { id: 10,name: "Software Engineer" },
+  { id: 11,name: "Mern Stack" },
+  { id: 12,name: "Mean Stack" },
+];
+
+const FetchedSkill = () => {
+
+  const skills = JSON.parse(localStorage.getItem("skills"));
+  if (skills === null) {
+    console.log("No Skills Found");
+    return;
+  }
+  
+  console.log(skills);
+  
+  return (
+    <div className="d-flex flex-wrap">
+      {skills.map((skill) => (
+        <button
+          type="button"
+          className="btn btn-remove-style rounded-pill me-3 mt-2"
+        >
+          {skill.name}{" "}
+          <span className="badge text-bg-secondary">
+            <i className="fa-solid fa-xmark"></i>
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+}
 
 const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
+  
   const ScopeStepNextBtn = () => {
     setScopeStep(true);
     setSkillsStep(false);
@@ -28,7 +56,36 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
     setTitleStep(true);
   };
 
-  
+  /* Search and Filter Data */
+  const [filteredData, setFilteredData] = useState([]);
+
+  const handleFilter = (e) => {
+    const searchWord = e.target.value;
+    const newFilter = data.filter((value) => {
+      return value.name.toLowerCase().indexOf(searchWord.toLowerCase()) > -1;
+    });
+
+    if (searchWord == "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+
+  const handleClick = (id, name, e) => {
+
+    const skill = {id, name}
+    let skills = [];
+    if (localStorage.getItem("skills")) {
+      skills = JSON.parse(localStorage.getItem("skills"));
+    }
+    
+    skills.push(skill);
+    localStorage.setItem("skills", JSON.stringify(skills));
+
+  };
+
+
   return (
     <section className="container p-3">
       <div className="row">
@@ -55,51 +112,21 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
         <div className="col-md-6 p-5 step-right d-flex flex-column">
           <h5 className="text-white m-top">Search or add up to 10 skills</h5>
 
-          <SearchBar placeholder={"Search"} data={data} />
+          <SearchBar
+            placeholder={"Search"}
+            filteredData={filteredData}
+            handleFilter={handleFilter}
+            handleClick={handleClick}
+          />
 
           <p className="text-green skill-text">
             <i className="fa-solid fa-star"></i>For the best results add 3-5
             skills
           </p>
           <h6 className="text-white mb-3">Selected Skill</h6>
-          <div className="d-flex flex-wrap">
-            <button
-              type="button"
-              className="btn btn-remove-style rounded-pill me-3 mt-2"
-            >
-              Artificial Intelligence{" "}
-              <span className="badge text-bg-secondary">
-                <i className="fa-solid fa-xmark"></i>
-              </span>
-            </button>
-            <button
-              type="button"
-              className="btn btn-remove-style rounded-pill me-3 mt-2"
-            >
-              Natural Language Processing{" "}
-              <span className="badge text-bg-secondary">
-                <i className="fa-solid fa-xmark"></i>
-              </span>
-            </button>
-            <button
-              type="button"
-              className="btn btn-remove-style rounded-pill me-3 mt-2"
-            >
-              Machine Learning{" "}
-              <span className="badge text-bg-secondary">
-                <i className="fa-solid fa-xmark"></i>
-              </span>
-            </button>
-            <button
-              type="button"
-              className="btn btn-remove-style rounded-pill me-3 mt-2"
-            >
-              Data Science{" "}
-              <span className="badge text-bg-secondary">
-                <i className="fa-solid fa-xmark"></i>
-              </span>
-            </button>
-          </div>
+          
+            
+            <FetchedSkill />
           <div className="popular-skill mt-4">
             <div className="popular-skill-title d-flex justify-content-between align-items-center mb-4">
               {/* <h5 className="text-white">Popular skills</h5>

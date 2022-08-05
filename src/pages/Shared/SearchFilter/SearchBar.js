@@ -17,9 +17,9 @@ const SearchBar = ({
         placeholder={placeholder}
         onChange={handleFilter}
       />
-      {filteredData.length != 0 && (
+      {filteredData.length !== 0 && (
         <ul className="dataList">
-          {filteredData.slice(0, 4).map((skill, key) => (
+          {filteredData.slice(0, 4).map((skill, key) => ( 
             <li key={key} onClick={()=> handleClick(skill.id,skill.name)}>
               {skill.name}
             </li>

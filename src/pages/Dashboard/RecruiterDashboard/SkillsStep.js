@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import SearchBar from "../../Shared/SearchFilter/SearchBar";
 import "./SkillsStep.css";
 
@@ -12,40 +12,53 @@ const data = [
   { id: 7, name: "Front End Development" },
   { id: 8, name: "Back End Development" },
   { id: 9, name: "Web Design" },
-  { id: 10,name: "Software Engineer" },
-  { id: 11,name: "Mern Stack" },
-  { id: 12,name: "Mean Stack" },
+  { id: 10, name: "Software Engineer" },
+  { id: 11, name: "Mern Stack" },
+  { id: 12, name: "Mean Stack" },
 ];
 
-const FetchedSkill = () => {
+const FetchedSkill = ({ skills }) => {
+  //  const deleteIssue = (id) => {
+  //    const skills = JSON.parse(localStorage.getItem("skills"));
+  //    const remainingSkills = skills.filter(
+  //      (skill) => parseInt(skill.id) !== id
+  //    );
+  //    localStorage.setItem("issues", JSON.stringify(remainingSkills));
+  //    window.location.reload();
+  //  };
 
-  const skills = JSON.parse(localStorage.getItem("skills"));
+  // const skills = JSON.parse(localStorage.getItem("skills"));
+  
   if (skills === null) {
     console.log("No Skills Found");
     return;
   }
-  
-  console.log(skills);
-  
+  // console.log(skills);
+
   return (
     <div className="d-flex flex-wrap">
-      {skills.map((skill) => (
+      {skills.map((skill, index) => (
         <button
+          key={index}
           type="button"
           className="btn btn-remove-style rounded-pill me-3 mt-2"
         >
           {skill.name}{" "}
-          <span className="badge text-bg-secondary">
+          <span
+            className="badge text-bg-secondary"
+            // onClick={() => deleteIssue(skill.id)}
+          >
             <i className="fa-solid fa-xmark"></i>
           </span>
         </button>
       ))}
     </div>
   );
-}
+};
 
 const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
-  
+  const [skills, setSkills] = useState([]);
+
   const ScopeStepNextBtn = () => {
     setScopeStep(true);
     setSkillsStep(false);
@@ -65,26 +78,29 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
       return value.name.toLowerCase().indexOf(searchWord.toLowerCase()) > -1;
     });
 
-    if (searchWord == "") {
+    if (searchWord === "") {
       setFilteredData([]);
     } else {
       setFilteredData(newFilter);
     }
   };
 
-  const handleClick = (id, name, e) => {
+  const handleClick = (skillId, name, e) => {
 
-    const skill = {id, name}
-    let skills = [];
-    if (localStorage.getItem("skills")) {
-      skills = JSON.parse(localStorage.getItem("skills"));
-    }
+    const alreadyExistSkill = skills.filter((skill) => skill.id !== skillId);
+    setSkills(alreadyExistSkill);
+
+      const addedSkill = { id: skillId, name };
+      setSkills((skill) => [...skill, addedSkill]);
     
-    skills.push(skill);
-    localStorage.setItem("skills", JSON.stringify(skills));
+    // if (localStorage.getItem("skills")) {
+    //   skills = JSON.parse(localStorage.getItem("skills"));
+    // }
 
+    // skills.push(skill);
+    // localStorage.setItem("skills", JSON.stringify(skills));
   };
-
+  console.log(skills);
 
   return (
     <section className="container p-3">
@@ -124,9 +140,8 @@ const SkillsStep = ({ setTitleStep, setSkillsStep, setScopeStep }) => {
             skills
           </p>
           <h6 className="text-white mb-3">Selected Skill</h6>
-          
-            
-            <FetchedSkill />
+
+          <FetchedSkill skills={skills} />
           <div className="popular-skill mt-4">
             <div className="popular-skill-title d-flex justify-content-between align-items-center mb-4">
               {/* <h5 className="text-white">Popular skills</h5>
